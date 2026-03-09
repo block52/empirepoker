@@ -1,0 +1,91 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  width: 260px;
+  background-color: #0a0a0a;
+  border-right: 1px solid #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem 2rem;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.sidebar-logo img {
+  width: 180px;
+  height: auto;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  gap: 0.25rem;
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #cccccc;
+  transition: all 0.2s ease;
+}
+
+.nav-menu li a:hover {
+  color: #ffffff;
+  background-color: #1a1a1a;
+  padding-left: 2rem;
+}
+
+.nav-menu li a.active {
+  color: #c9a961;
+  border-left: 3px solid #c9a961;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 260px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #888888;
+  font-weight: 300;
+}

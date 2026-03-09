@@ -77,9 +77,6 @@ function TournamentDetail() {
         <InfoCard label="Entries">
           <strong>{tournament.entries} / {tournament.players}</strong>
         </InfoCard>
-        <InfoCard label="Registration" className="highlight">
-          <strong className="signup">Sign Up!</strong>
-        </InfoCard>
         {tournament.prize ? (
           <InfoCard label="Prize Pool" className="prize">
             <strong>{tournament.prize}</strong>
@@ -87,6 +84,15 @@ function TournamentDetail() {
         ) : (
           <InfoCard label="Prize Pool">
             <strong>-</strong>
+          </InfoCard>
+        )}
+        {tournament.lastLonger !== null ? (
+          <InfoCard label="Last-Longer">
+            <strong>{tournament.lastLonger}</strong>
+          </InfoCard>
+        ) : (
+          <InfoCard label="Avg. Stack">
+            <strong>{tournament.avgStack.toLocaleString()}</strong>
           </InfoCard>
         )}
       </div>
@@ -103,13 +109,7 @@ function TournamentDetail() {
         </InfoCard>
       </div>
 
-      {tournament.lastLonger !== null && (
-        <div className="detail-grid cols-1-narrow">
-          <InfoCard label="Last-Longer">
-            <strong>{tournament.lastLonger}</strong>
-          </InfoCard>
-        </div>
-      )}
+      <button className="signup-btn">Sign Up</button>
 
       <div className="levels-section" id="levels">
         <h2>Blind Structure</h2>

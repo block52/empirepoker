@@ -132,14 +132,31 @@
   font-weight: 400;
 }
 
-/* Signup card */
-.info-card.highlight {
-  border-color: #c9a961;
+/* Sign Up button */
+.signup-btn {
+  display: block;
+  width: 100%;
+  padding: 1.1rem;
+  margin-bottom: 0.75rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000000;
+  background: linear-gradient(135deg, #c9a961, #a8893e);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.1s ease;
 }
 
-.signup {
-  color: #c9a961;
-  font-size: 1.2rem;
+.signup-btn:hover {
+  opacity: 0.9;
+}
+
+.signup-btn:active {
+  transform: scale(0.99);
 }
 
 /* Prize card */

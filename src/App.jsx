@@ -1,4 +1,6 @@
-import { Routes, Route, NavLink } from "react-router-dom";
+import { useState } from "react";
+import { Routes, Route, NavLink, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import "./App.css";
 import logo from "/logo.png";
 import Home from "./pages/Home.jsx";
@@ -9,9 +11,28 @@ import Login from "./pages/Login.jsx";
 import PlayerOfTheSeries from "./pages/PlayerOfTheSeries.jsx";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
+
   return (
     <div className="app">
-      <nav className="sidebar">
+      <button
+        className={`hamburger ${menuOpen ? "open" : ""}`}
+        onClick={() => setMenuOpen((o) => !o)}
+        aria-label="Toggle menu"
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+
+      {menuOpen && <div className="overlay" onClick={() => setMenuOpen(false)} />}
+
+      <nav className={`sidebar ${menuOpen ? "open" : ""}`}>
         <div className="sidebar-logo">
           <NavLink to="/">
             <img src={logo} alt="Empire Poker" />

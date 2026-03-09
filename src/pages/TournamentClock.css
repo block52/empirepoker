@@ -338,3 +338,82 @@
   font-size: 0.75rem;
   color: #444444;
 }
+
+@media (max-width: 768px) {
+  .tv-header {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .tv-header-logo img {
+    height: 32px;
+  }
+
+  .tv-header-info {
+    margin-left: 0.75rem;
+  }
+
+  .tv-tournament-name {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+
+  .tv-tournament-sub {
+    font-size: 0.6rem;
+  }
+
+  .tv-exit {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  /* Hide side panels on mobile */
+  .tv-stats,
+  .tv-upcoming {
+    display: none;
+  }
+
+  .tv-center {
+    padding: 1rem;
+  }
+
+  .tv-level-badge {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+
+  .tv-timer {
+    font-size: 4rem;
+    letter-spacing: 3px;
+  }
+
+  .tv-progress-bar {
+    width: 90%;
+    height: 6px;
+    margin-bottom: 1rem;
+  }
+
+  .tv-blinds-value {
+    font-size: 1.8rem;
+  }
+
+  .tv-blinds-value.break-text {
+    font-size: 1.2rem;
+  }
+
+  .tv-next-value {
+    font-size: 1rem;
+  }
+
+  .tv-controls {
+    margin-top: 1rem;
+  }
+
+  .tv-ctrl {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .tv-ctrl.tv-ctrl-play {
+    padding: 0.4rem 1.25rem;
+  }
+}

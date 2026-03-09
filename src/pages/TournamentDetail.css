@@ -247,3 +247,33 @@
 .clock-btn:active {
   transform: scale(0.99);
 }
+
+@media (max-width: 768px) {
+  .detail-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .detail-grid.cols-2,
+  .detail-grid.cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-grid.cols-1-narrow {
+    max-width: 100%;
+  }
+
+  .info-card-value {
+    font-size: 1rem;
+  }
+
+  .levels-table thead th {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.55rem;
+    letter-spacing: 0.5px;
+  }
+
+  .levels-table tbody td {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}

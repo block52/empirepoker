@@ -196,3 +196,64 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+@media (max-width: 768px) {
+  .pots-page h1 {
+    font-size: 1.6rem;
+  }
+
+  .pots-podium {
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .podium-spot {
+    padding: 1rem 0.75rem;
+  }
+
+  .podium-spot.first {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .podium-rank {
+    font-size: 1.4rem;
+  }
+
+  .first .podium-rank {
+    font-size: 1.8rem;
+  }
+
+  .podium-name {
+    font-size: 0.8rem;
+  }
+
+  .podium-points {
+    font-size: 1.2rem;
+  }
+
+  .podium-games {
+    font-size: 0.65rem;
+  }
+
+  .pots-table thead th {
+    font-size: 0.6rem;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .pots-table tbody td {
+    padding: 0.65rem 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .col-rank {
+    width: 40px;
+  }
+
+  .col-games {
+    width: 50px;
+  }
+
+  .col-points {
+    width: 60px;
+  }
+}

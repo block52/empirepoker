@@ -45,11 +45,16 @@
   border: 1px solid #1a1a1a;
   border-radius: 8px;
   transition: border-color 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
 }
 
 .event-row:hover {
   border-color: #2a2a2a;
   background-color: #111111;
+}
+
+.event-row:active {
+  background-color: #151515;
 }
 
 /* Time */
@@ -127,4 +132,31 @@
 .meta-value.prize {
   color: #c9a961;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .tournaments h1 {
+    font-size: 1.6rem;
+  }
+
+  .event-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .event-time {
+    min-width: unset;
+  }
+
+  .event-meta {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .meta-item {
+    min-width: 50px;
+  }
 }

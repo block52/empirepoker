@@ -138,3 +138,13 @@
 .login-signup-link:hover {
   color: #79b8ff;
 }
+
+@media (max-width: 768px) {
+  .login-card {
+    max-width: 100%;
+  }
+
+  .login-card h1 {
+    font-size: 1.3rem;
+  }
+}

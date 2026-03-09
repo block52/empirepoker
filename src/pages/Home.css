@@ -253,3 +253,61 @@
   font-weight: 600;
   color: #c9a961;
 }
+
+@media (max-width: 768px) {
+  .home-hero {
+    padding: 1.5rem 0 2rem;
+  }
+
+  .home-logo {
+    width: 120px;
+  }
+
+  .home-hero h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .home-hero p {
+    font-size: 0.95rem;
+  }
+
+  .home-hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-stats {
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .home-stat-value {
+    font-size: 1.6rem;
+  }
+
+  .home-sections {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .home-event {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .home-event-date {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .home-event-prize {
+    margin-left: auto;
+  }
+}

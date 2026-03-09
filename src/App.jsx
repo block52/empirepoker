@@ -3,6 +3,8 @@ import "./App.css";
 import logo from "/logo.png";
 import Home from "./pages/Home.jsx";
 import Tournaments from "./pages/Tournaments.jsx";
+import TournamentDetail from "./pages/TournamentDetail.jsx";
+import TournamentClock from "./pages/TournamentClock.jsx";
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tournaments" element={<Tournaments />} />
+          <Route path="/tournaments/:id" element={<TournamentDetail />} />
+          <Route path="/tournaments/:id/clock" element={<TournamentClock />} />
         </Routes>
       </main>
     </div>

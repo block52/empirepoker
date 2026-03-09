@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { findTournament, BADGE_COLORS } from "../data/tournaments.js";
 import "./TournamentDetail.css";
 
@@ -18,6 +18,7 @@ function InfoCard({ label, children, className }) {
 
 function TournamentDetail() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const tournament = findTournament(Number(id));
 
   if (!tournament) {
@@ -136,6 +137,13 @@ function TournamentDetail() {
           </tbody>
         </table>
       </div>
+
+      <button
+        className="clock-btn"
+        onClick={() => navigate(`/tournaments/${tournament.id}/clock`)}
+      >
+        Tournament Clock
+      </button>
     </div>
   );
 }

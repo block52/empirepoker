@@ -1,0 +1,255 @@
+.home {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Hero */
+.home-hero {
+  text-align: center;
+  padding: 3rem 0 2.5rem;
+}
+
+.home-logo {
+  width: 160px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.home-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.home-hero p {
+  font-size: 1.1rem;
+  color: #888888;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.home-hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.home-btn.primary {
+  background: linear-gradient(135deg, #c9a961, #a8893e);
+  color: #000000;
+}
+
+.home-btn.primary:hover {
+  opacity: 0.9;
+}
+
+.home-btn.secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #333333;
+}
+
+.home-btn.secondary:hover {
+  border-color: #c9a961;
+  color: #c9a961;
+}
+
+/* Stats */
+.home-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 0;
+  margin-bottom: 2.5rem;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.home-stat {
+  text-align: center;
+}
+
+.home-stat-value {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.home-stat-value.gold {
+  color: #c9a961;
+}
+
+.home-stat-label {
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #555555;
+  margin-top: 0.25rem;
+}
+
+/* Sections */
+.home-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.home-section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.home-section-header h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #c9a961;
+}
+
+.home-section-link {
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #555555;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.home-section-link:hover {
+  color: #c9a961;
+}
+
+/* Upcoming events */
+.home-upcoming {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.home-event {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  background-color: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.home-event:hover {
+  border-color: #2a2a2a;
+  background-color: #111111;
+}
+
+.home-event-date {
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #555555;
+  min-width: 70px;
+}
+
+.home-event-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-event-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.home-event-meta {
+  font-size: 0.7rem;
+  color: #555555;
+  margin-top: 0.15rem;
+}
+
+.home-event-prize {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #c9a961;
+  white-space: nowrap;
+}
+
+/* Leaderboard preview */
+.home-leaderboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-leader-row {
+  display: flex;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #0f0f0f;
+}
+
+.home-leader-row:last-child {
+  border-bottom: none;
+}
+
+.home-leader-rank {
+  width: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333333;
+}
+
+.home-leader-rank.rank-1 {
+  color: #c9a961;
+}
+
+.home-leader-rank.rank-2 {
+  color: #aaaaaa;
+}
+
+.home-leader-rank.rank-3 {
+  color: #8b6914;
+}
+
+.home-leader-name {
+  flex: 1;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #cccccc;
+}
+
+.home-leader-points {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #c9a961;
+}

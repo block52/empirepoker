@@ -60,6 +60,16 @@
   border-left: 3px solid #c9a961;
 }
 
+.nav-spacer {
+  height: 1px;
+  background-color: #1a1a1a;
+  margin: 0.5rem 1.5rem;
+}
+
+.nav-menu li a.nav-login {
+  color: #c9a961;
+}
+
 /* Sidebar Socials */
 .sidebar-socials {
   margin-top: auto;

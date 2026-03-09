@@ -5,6 +5,8 @@ import Home from "./pages/Home.jsx";
 import Tournaments from "./pages/Tournaments.jsx";
 import TournamentDetail from "./pages/TournamentDetail.jsx";
 import TournamentClock from "./pages/TournamentClock.jsx";
+import Login from "./pages/Login.jsx";
+import PlayerOfTheSeries from "./pages/PlayerOfTheSeries.jsx";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <li><NavLink to="/tickets">Empire Tickets</NavLink></li>
           <li><NavLink to="/hendon-mob">Hendon Mob</NavLink></li>
           <li><NavLink to="/player-of-the-series">Player of the Series</NavLink></li>
+          <li className="nav-spacer" />
+          <li><NavLink to="/login" className="nav-login">Login</NavLink></li>
         </ul>
         <div className="sidebar-socials">
           <a href="https://www.facebook.com/people/Empire-Poker-Brisbane/61554781263450/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -44,6 +48,8 @@ function App() {
           <Route path="/tournaments" element={<Tournaments />} />
           <Route path="/tournaments/:id" element={<TournamentDetail />} />
           <Route path="/tournaments/:id/clock" element={<TournamentClock />} />
+          <Route path="/player-of-the-series" element={<PlayerOfTheSeries />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </main>
     </div>

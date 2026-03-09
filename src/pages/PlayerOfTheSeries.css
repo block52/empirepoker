@@ -1,0 +1,198 @@
+.pots-page {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.pots-page h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+
+/* Podium */
+.pots-podium {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.podium-spot {
+  text-align: center;
+  padding: 1.5rem 1.25rem;
+  background-color: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  flex: 1;
+  max-width: 220px;
+}
+
+.podium-spot.first {
+  border-color: #c9a961;
+  padding: 2rem 1.25rem;
+}
+
+.podium-rank {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+
+.first .podium-rank {
+  color: #c9a961;
+  font-size: 2.5rem;
+}
+
+.second .podium-rank {
+  color: #aaaaaa;
+}
+
+.third .podium-rank {
+  color: #8b6914;
+}
+
+.podium-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+}
+
+.podium-points {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #c9a961;
+}
+
+.podium-games {
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #555555;
+  margin-top: 0.25rem;
+}
+
+/* Search */
+.pots-search {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.2s ease;
+}
+
+.pots-search::placeholder {
+  color: #444444;
+}
+
+.pots-search:focus {
+  border-color: #c9a961;
+}
+
+/* Table */
+.pots-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.pots-table thead th {
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #555555;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #1a1a1a;
+  text-align: left;
+}
+
+.pots-table thead th.col-rank,
+.pots-table thead th.col-games,
+.pots-table thead th.col-points {
+  text-align: center;
+}
+
+.pots-table tbody td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #0f0f0f;
+  color: #cccccc;
+  font-size: 0.95rem;
+}
+
+.pots-table tbody tr:hover {
+  background-color: #0a0a0a;
+}
+
+.pots-table tbody tr.top-three {
+  background-color: #080808;
+}
+
+.pots-table tbody tr.top-three .col-name {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.col-rank {
+  text-align: center;
+  width: 60px;
+}
+
+.col-games {
+  text-align: center;
+  width: 80px;
+  color: #666666;
+}
+
+.col-points {
+  text-align: center;
+  width: 90px;
+  font-weight: 600;
+  color: #c9a961;
+}
+
+/* Rank badges */
+.rank-badge {
+  display: inline-block;
+  min-width: 28px;
+  font-weight: 600;
+  color: #666666;
+}
+
+.rank-badge.rank-1 {
+  color: #c9a961;
+}
+
+.rank-badge.rank-2 {
+  color: #aaaaaa;
+}
+
+.rank-badge.rank-3 {
+  color: #8b6914;
+}
+
+/* Empty state */
+.pots-empty {
+  text-align: center;
+  padding: 3rem;
+  color: #444444;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

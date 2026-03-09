@@ -1,0 +1,205 @@
+.tournament-detail {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888888;
+  margin-bottom: 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #c9a961;
+}
+
+/* Header */
+.detail-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.detail-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.detail-subtitle {
+  font-size: 0.95rem;
+  color: #888888;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+}
+
+.detail-badges {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+/* Info grid */
+.detail-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.detail-grid.cols-1 {
+  grid-template-columns: 1fr;
+}
+
+.detail-grid.cols-1-narrow {
+  grid-template-columns: 1fr;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detail-grid.cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.detail-grid.cols-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Info card */
+.info-card {
+  background-color: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  text-align: center;
+}
+
+.info-card-label {
+  font-size: 0.65rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #555555;
+  margin-bottom: 0.4rem;
+}
+
+.info-card-value {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.info-card-value strong {
+  font-weight: 600;
+}
+
+/* Registration status */
+.reg-status {
+  font-weight: 600;
+}
+
+.reg-status.open {
+  color: #4caf50;
+}
+
+.reg-status.open::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+.reg-status.closed {
+  color: #f44336;
+}
+
+.reg-detail {
+  font-size: 0.85rem;
+  color: #888888;
+  font-weight: 400;
+}
+
+/* Signup card */
+.info-card.highlight {
+  border-color: #c9a961;
+}
+
+.signup {
+  color: #c9a961;
+  font-size: 1.2rem;
+}
+
+/* Prize card */
+.info-card.prize .info-card-value {
+  color: #c9a961;
+}
+
+/* Levels table */
+.levels-section {
+  margin-top: 2.5rem;
+}
+
+.levels-section h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #c9a961;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.levels-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.9rem;
+}
+
+.levels-table thead th {
+  font-size: 0.65rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #555555;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.levels-table tbody td {
+  padding: 0.65rem 1rem;
+  text-align: center;
+  color: #cccccc;
+  border-bottom: 1px solid #0f0f0f;
+}
+
+.levels-table tbody tr:hover {
+  background-color: #0a0a0a;
+}
+
+.levels-table tbody tr.break-row {
+  background-color: #0d0d0d;
+}
+
+.levels-table tbody tr.break-row td {
+  color: #c9a961;
+  font-weight: 500;
+  font-style: italic;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #1a1a1a;
+}

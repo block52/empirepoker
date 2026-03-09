@@ -1,0 +1,130 @@
+.tournaments {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.tournaments h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+
+/* Day grouping */
+.tournament-day {
+  margin-bottom: 2rem;
+}
+
+.day-header {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #c9a961;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+/* Event rows */
+.day-events {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.event-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 1.25rem;
+  background-color: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.event-row:hover {
+  border-color: #2a2a2a;
+  background-color: #111111;
+}
+
+/* Time */
+.event-time {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #888888;
+  min-width: 80px;
+  white-space: nowrap;
+}
+
+/* Name + badges */
+.event-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.event-name {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.3rem;
+}
+
+.event-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+/* Meta grid */
+.event-meta {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.meta-label {
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #555555;
+  margin-bottom: 0.15rem;
+}
+
+.meta-value {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #cccccc;
+  white-space: nowrap;
+}
+
+.meta-value.prize {
+  color: #c9a961;
+  font-weight: 600;
+}

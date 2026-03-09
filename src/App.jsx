@@ -1,25 +1,28 @@
+import { Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import logo from "/logo.png";
+import Home from "./pages/Home.jsx";
+import Tournaments from "./pages/Tournaments.jsx";
 
 function App() {
   return (
     <div className="app">
       <nav className="sidebar">
         <div className="sidebar-logo">
-          <a href="/">
+          <NavLink to="/">
             <img src={logo} alt="Empire Poker" />
-          </a>
+          </NavLink>
         </div>
         <ul className="nav-menu">
-          <li><a href="/" className="active">Home</a></li>
-          <li><a href="/tournaments">Tournaments</a></li>
-          <li><a href="/results">Results</a></li>
-          <li><a href="/leaderboard">Empire League Leaderboard</a></li>
-          <li><a href="/gold-card">Gold Card Leaderboard</a></li>
-          <li><a href="/divisions">Empire Divisions</a></li>
-          <li><a href="/tickets">Empire Tickets</a></li>
-          <li><a href="/hendon-mob">Hendon Mob</a></li>
-          <li><a href="/player-of-the-series">Player of the Series</a></li>
+          <li><NavLink to="/" end>Home</NavLink></li>
+          <li><NavLink to="/tournaments">Tournaments</NavLink></li>
+          <li><NavLink to="/results">Results</NavLink></li>
+          <li><NavLink to="/leaderboard">Empire League Leaderboard</NavLink></li>
+          <li><NavLink to="/gold-card">Gold Card Leaderboard</NavLink></li>
+          <li><NavLink to="/divisions">Empire Divisions</NavLink></li>
+          <li><NavLink to="/tickets">Empire Tickets</NavLink></li>
+          <li><NavLink to="/hendon-mob">Hendon Mob</NavLink></li>
+          <li><NavLink to="/player-of-the-series">Player of the Series</NavLink></li>
         </ul>
         <div className="sidebar-socials">
           <a href="https://www.facebook.com/people/Empire-Poker-Brisbane/61554781263450/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -34,10 +37,10 @@ function App() {
         </div>
       </nav>
       <main className="main-content">
-        <div className="hero">
-          <h1>Empire Poker</h1>
-          <p>Australia&apos;s Premier Poker League</p>
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/tournaments" element={<Tournaments />} />
+        </Routes>
       </main>
     </div>
   );
